@@ -57,7 +57,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_fonts/font = ExtResource("2_62cc7")
 theme_override_font_sizes/font_size = 10
-text = "FireRed (Default)"
+text = "FireRed "
 
 [node name="LeafGreenButton" type="Button" parent="Control/VBoxContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
@@ -66,13 +66,5 @@ theme_override_fonts/font = ExtResource("2_62cc7")
 theme_override_font_sizes/font_size = 10
 text = "LeafGreen"
 
-[node name="OpenFileDialogButton" type="Button" parent="Control/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_fonts/font = ExtResource("2_62cc7")
-theme_override_font_sizes/font_size = 10
-text = "Choose in FileSystem"
-
 [connection signal="pressed" from="Control/VBoxContainer/VBoxContainer/GridContainer/FireRedButton" to="." method="_on_fire_red_button_pressed"]
 [connection signal="pressed" from="Control/VBoxContainer/VBoxContainer/GridContainer/LeafGreenButton" to="." method="_on_leaf_green_button_pressed"]
-[connection signal="pressed" from="Control/VBoxContainer/OpenFileDialogButton" to="." method="_on_open_file_dialog_button_pressed"]
